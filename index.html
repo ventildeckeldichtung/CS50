@@ -3,27 +3,56 @@
     <head>
         <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
         <style>
+            .links{
+                position: relative;
+                margin-left: 85%;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+            }
+            input[type=text]{
+
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                border-radius: 20px;
+                border: 1px solid rgb(100, 97, 97);
+                color: #a0d18c;
+                width: 550px;
+                height: 40px;
+                padding-left: 10px;
+                }
+                
+            input[type=text]:focus {
+                outline: none;
+                border: 1px solid #a0d18c;
+                color: #2d9fd9;
+            }
+
 
         </style>
     </head>
     <body>
-
         <title>Search</title>
-        <a href="../CS50/images.html">
+        <a class="links" href="../CS50/images.html">
             Images
         </a>
-        <a href="../CS50/advanced.html">
+        <a class="links" href="../CS50/advanced.html">
             Advanced Search
         </a>
         <div>
-            <form action="https://www.google.com/search">
-                <input class="gLFyf gsfi" type="text" name=q maxlength="2048" autocapitalize="off" autocomplete="off" autocorrect="off" >
-                <br>
-                    <input type="submit" value="Google Search">
-                    <input type="submit" value="I'm feeling lucky" name="btnI" id="button">
-                </br>
-        </form>
+            <image src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"></image>
         </div>
+      
+        <div class="msearch">  
+                <form class="gform" action="https://www.google.com/search">
+                    <input  type="text" name=q maxlength="2048" autocapitalize="off" autocomplete="off" autocorrect="off" >
+                    <br>
+                        <input type="submit" value="Google Search" style="margin-left: 30%;">
+                        <input type="submit" value="I'm feeling lucky" name="btnI" id="button">
+                    </br>
+                </form>
+            </div>
     </body>
 
 </html>
