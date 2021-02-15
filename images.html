@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
         <style>
-
+            .links{
+                position: relative;
+                margin-left: 85%;
+            }
+            .main {
+                position: relative;
+                margin-top: 12%;
+                
+            }
+            div {
+                display: flex;
+                justify-content: center;
+            }
+            input[type=text]{
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+            border: 1px solid rgb(100, 97, 97);
+            color: #a0d18c;
+            width: 550px;
+            height: 40px;
+            padding-left: 10px;
+            }
+            input[type=text]:focus {
+            outline: none;
+            border: 1px solid #a0d18c;
+            }
         </style>
     </head>
     <body>
         <title>Google Images</title>
-        <form action="https://www.google.de/search">
-            <input type="text" name="q">
-            <input type="submit" name="tbm" value="isch" hidden>
-        </form>
+
+        <br>
+        </br>
+        <div class="main"> </div>
+            <div>
+                <image src="bilder.png" alt="Google Logo"></image>
+            </div>
+       
+        <div class="msearch"> 
+            <form class="gform" action="https://www.google.de/search">
+                <input type="text" name=q maxlength="2048" autocapitalize="off" autocomplete="off" autocorrect="off">
+                <input type="submit" name="tbm" value="isch" hidden>
+            </form>
+        </div>
+        </div>
     </body>
 
 </html>

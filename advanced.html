@@ -1,20 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
+        <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
         <style>
- 
+            body {
+                font-family: arial,sans-serif;
+            }
+            .goolelogo {
+                background: #f1f1f1;
+            }
+            .searchtitle {
+                margin-left: 10px;
+                color: #d93025;
+                font-size: 20px;
+                margin: 25px 35px;
+            }
+            .line {
+                border-bottom: 1px solid #ebebeb;
+            }
+            .searchtable {
+                margin-left: 4%;
+                border: 0px;
+                width: auto;
+            }
+            .textinput {
+                width: 100%;
+                text-align: left;   
+                text-rendering: auto;
+                color: -internal-light-dark(black, white);
+                text-indent: 0px;
+                text-shadow: none;
+                appearance: textfield;
+                background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+                -webkit-rtl-ordering: logical;
+                cursor: text;
+                margin: 0em;
+                font: 400 13.3333px Arial;
+                border-radius: 1px;
+                border: 1px solid #d9d9d9;
+                border-top: 1px solid #c0c0c0;
+                font-size: 13px;
+                height: 25px;
+                padding: 1px 8px;
+            }
+            .numinput {
+                width: auto%;
+                text-align: left;   
+                text-rendering: auto;
+                color: -internal-light-dark(black, white);
+                text-indent: 0px;
+                text-shadow: none;
+                appearance: textfield;
+                background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+                -webkit-rtl-ordering: logical;
+                cursor: text;
+                margin: 0em;
+                font: 400 13.3333px Arial;
+                border-radius: 1px;
+                border: 1px solid #d9d9d9;
+                border-top: 1px solid #c0c0c0;
+                font-size: 13px;
+                height: 25px;
+                padding: 1px 8px;
+            }
+            table { 
+                white-space: nowrap; 
+                }
         </style>
     </head>
     <body>
         <title>Advanced Search</title>
-        <form action="https://google.com/search">
-            <div>all these words: <input class="textinput" type="text" name="as_q">
-            <div>this exact word or phrase:<input class="textinput" type="text" name="as_epq"></div>
-            <div>any of these words:<input class="textinput" type="text" name="as_oq"></div>
-            <div>none of these words:<input class="textinput" type="text" name="as_eq"></div>
-            <div>numbers ranging from:<input class="textinput" type="text" name="as_nlo"> bis <input type="text" name="as_nhi"> </div>
-            <div><input type="submit" value="Advanced Search"></div>
-        </form>
+        <a href="index.html">
+            <div class="goolelogo" >
+                <img src="googleklein.PNG" alt="Google Logo" style="margin-left: 10px;">
+            </div>
+        </a>
+        <div class="searchtitle">
+            Advanced Search
+        </div>    
+        <div class="line"></div>
+            <form action="https://google.com/search">
+                <table class="searchtable">
+                    <tr>
+                        <td class="searchtext"><label class="textlabel">all these words: </label></td>
+                        <td class="searchfield"><input class="textinput" type="text" name="as_q"></td>
+                    </tr>
+                    <tr>
+                        <td class="searchtext"><label class="textlabel">this exact word or phrase: </label></td>
+                        <td class="searchfield"><input class="textinput" type="text" name="as_epq"></td>
+                    </tr>
+                    <tr>
+                        <td class="searchtext"><label class="textlabel">this exact word or phrase: </label></td>
+                        <td class="searchfield"><input class="textinput" type="text" name="as_oq"></td>
+                    </tr>
+                    <tr>
+                        <td class="searchtext"><label class="textlabel">any of these words: </label></td>
+                        <td class="searchfield"><input class="textinput" type="text" name="as_eq"></td>
+                    </tr>
+                    <tr>
+                        <td class="searchtext"><label class="textlabel">none of these words: </label></td>
+                        <td class="searchfield"><input class="textinput" type="text" name="as_eq"></td>
+                    </tr>
+                    <tr>
+                        <td class="searchtext"><label class="textlabel">numbers ranging from: </label></td>
+                        <td class="searchfield">
+                            <input class="numinput" type="text" name="as_nlo">
+                            <label class="textlabel">to </label>
+                            <input class="numinput" type="text" name="as_nhi">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="textlabel"></label></td>
+                        <td><input type="submit" class="action" value="Advanced Search" style="float:  right;"></td>
+                    </tr>
+                </table>
+            </form>
     </body>
-
 </html>
